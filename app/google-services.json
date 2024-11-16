@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1064324923587",
+    "project_id": "chat-on-3694c",
+    "storage_bucket": "chat-on-3694c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1064324923587:android:89473980e93a8c305b2276",
+        "android_client_info": {
+          "package_name": "com.example.chaton"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPpvz9I9KEg1yxgPOyBLzO2tBciZGirXY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
