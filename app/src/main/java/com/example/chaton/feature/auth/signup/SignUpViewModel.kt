@@ -24,7 +24,7 @@ class SignUpViewModel @Inject constructor():ViewModel() {
                             UserProfileChangeRequest.Builder()
                                 .setDisplayName(name)
                                 .build()
-                        )?.addOnCompleteListener {
+                        ).addOnCompleteListener {
                             _state.value = SignUpState.Success
                         }
                         _state.value = SignUpState.Success

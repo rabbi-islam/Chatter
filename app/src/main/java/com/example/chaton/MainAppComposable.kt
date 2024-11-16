@@ -32,6 +32,10 @@ fun MainApp() {
             composable("home") {
                 HomeScreen(navController = navController)
             }
+
+            composable("chat/{channel_id}") {
+                HomeScreen(navController = navController)
+            }
         }
     }
 }
