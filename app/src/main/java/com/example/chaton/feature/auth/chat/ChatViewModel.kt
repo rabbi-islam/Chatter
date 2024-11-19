@@ -33,19 +33,19 @@ class ChatViewModel @Inject constructor() : ViewModel() {
             imageUrl = null
         )
 
-        val key = db.getReference("message").child(channelId).push().setValue(message)
+        db.getReference("message").child(channelId).push().setValue(message)
 
     }
 
     fun listenForMessage(channelId: String) {
-        db.getReference("message").child(channelId).child("message").orderByChild("createdAt")
+        db.getReference("message").child(channelId).orderByChild("createdAt")
             .addValueEventListener(object : ValueEventListener {
                 override fun onDataChange(snapshot: DataSnapshot) {
                     val list = mutableListOf<Message>()
                     snapshot.children.forEach { data->
                         val message = data.getValue(Message::class.java)
                         message?.let {
-                            list.add(message)
+                            list.add(it)
                         }
                     }
                     _message.value = list
